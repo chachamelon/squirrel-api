@@ -48,9 +48,3 @@ build/
 .env
 .env.local
 .env.*.local
-
-# Build artifacts and binaries
-runner
-runner.exe
-bin/
-build/

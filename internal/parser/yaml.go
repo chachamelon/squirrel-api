@@ -5,8 +5,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/chachamelon/squirrel-api/internal/model"
+
 	"gopkg.in/yaml.v3"
-	"api-test-engine/internal/model"
 )
 
 func LoadTestCases(path string) ([]*model.TestCase, error) {

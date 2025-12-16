@@ -1,4 +1,4 @@
-module api-test-engine
+module github.com/chachamelon/squirrel-api
 
 go 1.25.5
 

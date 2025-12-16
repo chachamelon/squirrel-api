@@ -1,20 +1,14 @@
-package main
+package engine
 
 import (
 	"fmt"
-	"os"
 
 	"github.com/chachamelon/squirrel-api/internal/executor"
 	"github.com/chachamelon/squirrel-api/internal/parser"
 )
 
-func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("usage: runner <testcase.yaml or directory>")
-		return
-	}
-
-	testCases, err := parser.LoadTestCases(os.Args[1])
+func RunTest(path string) (string, error) {
+	testCases, err := parser.LoadTestCases(path)
 	if err != nil {
 		panic(err)
 	}
@@ -33,4 +27,6 @@ func main() {
 		}
 		fmt.Println("---")
 	}
+
+	return "hi", nil
 }

@@ -3,9 +3,10 @@ package executor
 import (
 	"time"
 
-	"api-test-engine/internal/assert"
-	"api-test-engine/internal/model"
 	"fmt"
+
+	"github.com/chachamelon/squirrel-api/internal/assert"
+	"github.com/chachamelon/squirrel-api/internal/model"
 )
 
 func Run(tc *model.TestCase) *model.TestResult {

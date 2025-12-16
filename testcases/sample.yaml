@@ -1,0 +1,13 @@
+name: login_api
+request:
+  method: GET
+  url: "https://jsonplaceholder.typicode.com/todos/1"
+  headers:
+    Content-Type: application/json
+  body:
+    id: test
+    pw: test
+assert:
+  status: 200
+  json:
+    title: not_null
